@@ -10,6 +10,10 @@ This is a simple e-commerce website developed using HTML, CSS, and JavaScript. T
 - **🛍️ Product Listings:** A variety of products are displayed with images, descriptions, and prices.
 - **💳 Checkout Process:** A basic checkout form is included for users to submit their orders.
 
+## Demo
+
+[Live Demo of Website](https://shopleyla.netlify.app/ "Shopping Website")
+
 ## 💻 Technologies Used
 
 - **HTML:** The structure of the website is created using HTML.
