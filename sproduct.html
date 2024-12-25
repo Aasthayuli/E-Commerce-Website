@@ -36,74 +36,14 @@
         <i id="bar" class="fa-solid fa-bars"></i>
       </div>
     </section>
-    <section id="prodetails" class="section-p1">
-      <div class="single-pro-image">
-        <img src="img/products/p1.jpg" width="100%" id="MainImg" alt="" />
-        <div class="small-img-group">
-          <div class="small-img-col">
-            <img
-              src="img/products/f1.jpg"
-              width="100%"
-              class="small-img"
-              alt=""
-            />
-          </div>
-          <div class="small-img-col">
-            <img
-              src="img/products/f2.jpg"
-              width="100%"
-              class="small-img"
-              alt=""
-            />
-          </div>
-          <div class="small-img-col">
-            <img
-              src="img/products/f3.jpg"
-              width="100%"
-              class="small-img"
-              alt=""
-            />
-          </div>
-          <div class="small-img-col">
-            <img
-              src="img/products/f4.jpg"
-              width="100%"
-              class="small-img"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-      <div class="single-pro-details">
-        <h6>Women Wear</h6>
-        <h4>Borrcco Cashmere-Blend Crop Jacket</h4>
-        <h2>Rs.317,200</h2>
-        <select>
-          <option>Select Size</option>
-          <option>XL</option>
-          <option>XXL</option>
-          <option>Small</option>
-          <option>Large</option>
-        </select>
-        <input type="number" value="1" />
-        <button class="normal">Add To Cart</button>
-        <h4>Product Details</h4>
-        <span
-          >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
-          molestiae ducimus excepturi ipsam ad? Ullam cupiditate fugit eveniet
-          quasi reiciendis. Sit, perferendis quis quisquam ut nisi explicabo
-          officiis aut eveniet! Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Eaque fuga exercitationem sunt enim atque porro hic
-          id quam. Quidem numquam, iure ex quod eligendi quo quaerat
-          exercitationem debitis tempora voluptatum?
-        </span>
-      </div>
+    <section id="prodetails">
+      <div class="single-pro-details" id="detail"></div>
     </section>
     <section id="product1" class="section-p1">
       <h2>Featured Products</h2>
       <p>Summer Collection New Modern Design</p>
       <div class="pro-container">
-        <div class="pro">
+        <div class="pro" data-id="1">
           <img src="img/products/p1.jpg" alt="" />
           <div class="desc">
             <span>Borrcco Cashmere-Blend Crop Jacket</span>
@@ -116,7 +56,7 @@
           </div>
         </div>
 
-        <div class="pro">
+        <div class="pro" data-id="2">
           <img src="img/products/p2.jpg" alt="" />
           <div class="desc">
             <span>All hearts Baby Dress Set</span>
@@ -129,7 +69,7 @@
           </div>
         </div>
 
-        <div class="pro">
+        <div class="pro" data-id="3">
           <img src="img/products/p3.jpg" alt="" />
           <div class="desc">
             <span>Versace Logo Baby Sleepsuit</span>
@@ -142,7 +82,7 @@
           </div>
         </div>
 
-        <div class="pro">
+        <div class="pro" data-id="4">
           <img src="img/products/p4.jpg" alt="" />
           <div class="desc">
             <span>Borroco Athena Baby changing Mat bag</span>
@@ -220,22 +160,6 @@
         <p>© 2022, Leyla - HTML CSS Ecommerce Template</p>
       </div>
     </footer>
-    <script>
-      var mainImg = document.getElementById("MainImg");
-      var smallImg = document.getElementsByClassName("small-img");
-      smallImg[0].onclick = function () {
-        mainImg.src = smallImg[0].src;
-      };
-      smallImg[1].onclick = function () {
-        mainImg.src = smallImg[1].src;
-      };
-      smallImg[2].onclick = function () {
-        mainImg.src = smallImg[2].src;
-      };
-      smallImg[3].onclick = function () {
-        mainImg.src = smallImg[3].src;
-      };
-    </script>
     <script src="script.js"></script>
   </body>
 </html>

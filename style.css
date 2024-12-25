@@ -456,34 +456,26 @@ footer .copyright {
 #prodetails {
   display: flex;
   margin-top: 5px;
+  padding: 10px;
 }
-#prodetails .single-pro-image {
-  width: 40%;
-  margin-right: 50px;
-}
-#MainImg {
-  border: 2px solid #808d7c;
-  border-radius: 5px;
-}
-.small-img-group {
+
+#prodetails .single-pro-details {
+  width: 95%;
   display: flex;
   justify-content: space-between;
 }
-.small-img-col {
-  border: 2px solid #808d7c;
-  border-radius: 5px;
-  flex-basis: 24%;
-  cursor: pointer;
+#prodetails .single-pro-details div {
+  padding: 0px 10px 0 10px;
 }
-#prodetails .single-pro-details {
-  width: 95%;
-  padding-top: 30px;
+#prodetails .single-pro-details h6 {
+  padding-top: 50px;
 }
-#prodetails .single-pro-details h4 {
-  padding: 40px 0 20px 0;
+#prodetails .single-pro-details h3 {
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #prodetails .single-pro-details h2 {
-  font-size: 26px;
+  font-size: 20px;
 }
 #prodetails .single-pro-details select {
   display: block;
@@ -499,6 +491,9 @@ footer .copyright {
 }
 #prodetails .single-pro-details input:focus {
   outline: none;
+}
+#prodetails .single-pro-details h4 {
+  padding-top: 25px;
 }
 #prodetails .single-pro-details span {
   line-height: 25px;
@@ -853,7 +848,7 @@ footer .copyright {
   font-size: 13px;
 }
 /*Media Query*/
-@media (max-width: 799px) {
+@media (max-width: 820px) {
   .section-m1 {
     margin: 40px 40px;
   }
@@ -932,6 +927,24 @@ footer .copyright {
   }
   #feature {
     justify-content: center;
+  }
+  #prodetails .single-pro-details {
+    flex-direction: column;
+  }
+  #prodetails .single-pro-details div {
+    text-align: center;
+  }
+  #prodetails .single-pro-details img {
+    width: 70%;
+  }
+  #prodetails .single-pro-details h6 {
+    padding-top: 5px;
+  }
+  #prodetails .single-pro-details select {
+    margin-left: 300px;
+  }
+  #prodetails .single-pro-details span {
+    font-size: 15px;
   }
   #product1 .pro-container {
     justify-content: center;
@@ -1024,6 +1037,11 @@ footer .copyright {
   #hero button {
     padding-top: 10px;
   }
+
+  #prodetails .single-pro-details select {
+    margin-left: 110px;
+  }
+
   #product1 .pro {
     width: 100%;
     border: 1px solid #cce7d0;
@@ -1163,5 +1181,15 @@ footer .copyright {
   #subtotal {
     width: 100%;
     padding: 20px;
+  }
+}
+@media (max-width: 540px) {
+  #prodetails .single-pro-details select {
+    margin-left: 180px;
+  }
+}
+@media (max-width: 344px) {
+  #prodetails .single-pro-details select {
+    margin-left: 100px;
   }
 }
