@@ -50,11 +50,11 @@ cd E-Commerce Website
 
 ## 🛍️ Product Listing
 
-<img src="img/shoppage.png" alt="Homepage Screenshot" width="1000"/>
+<img src="img/shoppage.png" alt="Shopping Screenshot" width="1000"/>
 
 ## 🛒 Shopping Cart
 
-<img src="img/cartPage.png" alt="Homepage Screenshot" width="1000"/>
+<img src="img/cartPage.png" alt="cartPage Screenshot" width="1000"/>
 
 # 🤝 Contributing
 
