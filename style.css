@@ -156,7 +156,7 @@ body {
 }
 #product1 .pro-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 20px;
   flex-wrap: wrap;
 }
@@ -252,7 +252,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   background-image: url("img/banner/b17.jpg");
-  min-width: 650px;
+  width: 650px;
   height: 55vh;
   background-size: cover;
   background-position: center;
@@ -307,12 +307,13 @@ body {
   justify-content: center;
   align-items: flex-start;
   background-image: url("img/banner/b7.jpg");
-  min-width: 30%;
+  width: 30%;
   height: 30vh;
   background-size: cover;
   background-position: center;
   padding: 20px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 #banner3 .banner-box2 {
   background-image: url("img/banner/b8.jpg");
@@ -336,6 +337,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   background-color: #000;
+  padding: 40px 80px;
 }
 #newsletter h4 {
   font-size: 22px;
@@ -356,7 +358,7 @@ body {
 }
 #newsletter input {
   height: 3.125rem;
-  padding: 0 1.25em;
+  padding: 0 1.25rem;
   font-size: 14px;
   width: 100%;
   border: 1px solid transparent;
@@ -366,6 +368,7 @@ body {
   border-bottom-right-radius: 0;
 }
 #newsletter button {
+  height: 3.15rem;
   background-color: #808d7c;
   color: #fff;
   white-space: nowrap;
@@ -373,6 +376,7 @@ body {
   border-bottom-left-radius: 0;
 }
 footer {
+  padding: 40px 80px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -438,9 +442,10 @@ footer .copyright {
 
 #page-header h2,
 #page-header p {
-  color: #fff;
+  color: #fff6da;
 }
 #pagination {
+  padding: 40px 80px;
   background-color: #000;
   text-align: center;
 }
@@ -581,6 +586,7 @@ footer .copyright {
   display: flex;
   align-items: center;
   background-color: #000;
+  padding: 40px 80px;
 }
 #about-head img {
   width: 50%;
@@ -597,6 +603,7 @@ footer .copyright {
 #about-app {
   text-align: center;
   background-color: #000;
+  padding: 40px 80px;
 }
 #about-app h1 {
   color: #fff;
@@ -635,6 +642,7 @@ footer .copyright {
   align-items: center;
   justify-content: space-between;
   background-color: #000;
+  padding: 40px 80px;
 }
 #contact-details .details {
   color: #fff;
@@ -664,9 +672,7 @@ footer .copyright {
   display: inline-block;
   font-size: 16px;
 }
-#contact-details .details li span {
-  padding: 10px;
-}
+
 #contact-details .map {
   width: 55%;
   height: 400px;
@@ -678,7 +684,6 @@ footer .copyright {
 #form-details {
   display: flex;
   justify-content: space-between;
-
   padding: 80px;
   border: 1px solid #808d7c;
   background-color: #000;
@@ -748,6 +753,7 @@ footer .copyright {
   overflow-x: auto;
   color: #fff;
   background-color: #000;
+  padding: 40px 80px;
 }
 #cart table {
   width: 100%;
@@ -797,9 +803,8 @@ footer .copyright {
 #cart table tbody td {
   font-size: 13px;
 }
-#remove-icon {
+.remove-icon {
   cursor: pointer;
-  color: #fff;
 }
 #cart-add {
   display: flex;
@@ -807,6 +812,7 @@ footer .copyright {
   justify-content: space-between;
   color: #fff;
   background-color: #000;
+  padding: 40px 80px;
 }
 #coupon {
   width: 50%;
@@ -848,7 +854,7 @@ footer .copyright {
   font-size: 13px;
 }
 /*Media Query*/
-@media (max-width: 820px) {
+/* @media (max-width: 820px) {
   .section-m1 {
     margin: 40px 40px;
   }
@@ -1006,8 +1012,8 @@ footer .copyright {
   #form-details form {
     width: 50%;
   }
-}
-@media (max-width: 477px) {
+} */
+/* @media (max-width: 477px) {
   .section-p1 {
     padding: 20px;
   }
@@ -1127,8 +1133,6 @@ footer .copyright {
   #blog .blog-details {
     width: 100%;
   }
-
-  /*about page*/
   #about-head {
     flex-direction: column;
   }
@@ -1148,8 +1152,6 @@ footer .copyright {
   #about-app .video {
     width: 100%;
   }
-
-  /*contact page*/
   #contact-details {
     display: flex;
     flex-direction: column;
@@ -1170,8 +1172,6 @@ footer .copyright {
     width: 100%;
     margin-bottom: 30px;
   }
-
-  /*cart page*/
   #cart-add {
     flex-direction: column;
   }
@@ -1182,14 +1182,398 @@ footer .copyright {
     width: 100%;
     padding: 20px;
   }
-}
-@media (max-width: 540px) {
+} */
+/* @media (max-width: 540px) {
   #prodetails .single-pro-details select {
     margin-left: 180px;
   }
-}
-@media (max-width: 344px) {
+} */
+/* @media (max-width: 344px) {
   #prodetails .single-pro-details select {
     margin-left: 100px;
+  }
+} */
+
+@media (max-width: 455px) {
+  #header {
+    height: 100px;
+    padding: 10px;
+  }
+  #header .logo {
+    width: 200px;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #000;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.5s ease-in-out;
+  }
+  #navbar.active {
+    right: 0;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile i {
+    color: #fff;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #fff;
+    font-size: 24px;
+  }
+  #navbar li a.active::after {
+    display: none;
+  }
+  #desktop-cart {
+    display: none;
+  }
+  #hero {
+    background-position: top 30% right 100%;
+    height: 500px;
+    padding: 10px;
+    align-items: self-start;
+  }
+  #hero h4 {
+    color: #000;
+    font-size: 14px;
+  }
+  #hero h2 {
+    color: #000;
+    font-size: 25px;
+    line-height: 2rem;
+  }
+  #hero p {
+    font-size: 10px;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+  }
+  #hero button {
+    padding: 10px 30px 0 0;
+    color: #6f7b6b;
+  }
+  #product1 .pro {
+    margin: 0 0 10px 0;
+    padding: 0;
+  }
+  #banner {
+    height: 40vh;
+    padding-left: 10px;
+  }
+  #banner h2 {
+    line-height: 2rem;
+    font-size: 20px;
+  }
+  #banner button {
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  #sm-banner .banner-box {
+    width: 500px;
+  }
+  #sm-banner h2 {
+    font-size: 30px;
+  }
+  #sm-banner button {
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  #banner3 {
+    padding: 0;
+  }
+  #banner3 .banner-box {
+    width: 100%;
+    margin-bottom: 3px;
+  }
+  #newsletter {
+    padding: 20px 10px;
+  }
+  #newsletter .form {
+    width: 500px;
+  }
+  footer {
+    padding: 20px;
+    flex-direction: column;
+  }
+  footer .logo {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  footer h4 {
+    padding-bottom: 5px;
+  }
+  footer .install img {
+    width: 100px;
+  }
+  #page-header {
+    background-position: top 30% right 40%;
+  }
+  #pagination {
+    padding: 30px 0;
+  }
+  #detail {
+    flex-direction: column;
+  }
+  #detail div {
+    padding: 0;
+    text-align: left;
+  }
+  img {
+    width: 300px;
+  }
+  #prodetails .single-pro-details span {
+    line-height: 15px;
+    font-size: 16px;
+  }
+
+  #blog {
+    padding: 10px;
+  }
+  #blog .blog-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 50px;
+  }
+  #blog img {
+    height: 200px;
+    width: 350px;
+    margin: 0;
+  }
+  #blog .blog-details {
+    width: 100%;
+  }
+  #about-head {
+    padding: 10px 0 0 0;
+    flex-direction: column;
+  }
+  #about-head img {
+    height: 200px;
+    width: 350px;
+  }
+  #about-head div {
+    padding: 5px;
+  }
+  #about-head div p,
+  #about-head div abbr {
+    font-size: 12px;
+  }
+  #about-app {
+    padding: 0;
+  }
+  #about-app h1 {
+    font-size: 30px;
+    padding: 20px 0 0 0;
+  }
+  #about-app .video {
+    width: 90%;
+    padding-bottom: 50px;
+  }
+  #contact-details {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #contact-details .details {
+    width: 100%;
+  }
+  #contact-details .details li span {
+    padding: 10px 0 10px 10px;
+  }
+  #contact-details .details h2,
+  #form-details form h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  #contact-details .details li p {
+    margin: 0;
+    padding: 5px;
+    font-size: 14px;
+  }
+  #contact-details .map {
+    width: 100%;
+    height: 300px;
+  }
+  #form-details {
+    flex-direction: column;
+    padding: 10px;
+  }
+  #form-details form {
+    width: 100%;
+  }
+  #form-details form textarea {
+    height: 150px;
+  }
+  #form-details form button {
+    margin-bottom: 20px;
+  }
+  #cart {
+    padding: 5px;
+  }
+  #cart-add {
+    padding: 0;
+    flex-direction: column;
+  }
+  #coupon {
+    padding: 30px 10px 10px 10px;
+    width: 100%;
+  }
+  #coupon input {
+    width: 70%;
+  }
+  #subtotal {
+    width: 100%;
+  }
+}
+@media (min-width: 455px) and (max-width: 1024px) {
+  #header {
+    padding: 20px 0 20px 2px;
+  }
+  #header .logo {
+    width: 150px;
+  }
+  #navbar li {
+    padding: 0 10px;
+  }
+  #navbar li a {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  #banner {
+    height: 400px;
+    padding: 10px;
+  }
+  #banner h4 {
+    font-size: 20px;
+  }
+  #banner h2 {
+    font-size: 35px;
+  }
+  #banner3 {
+    flex-direction: column;
+    padding: 0;
+  }
+  #banner3 .banner-box {
+    width: 100%;
+  }
+  #newsletter {
+    padding: 30px 10px;
+  }
+  #newsletter .form {
+    width: 100%;
+  }
+  footer {
+    padding: 20px;
+    flex-direction: column;
+  }
+  #blog {
+    padding: 0;
+  }
+  #detail {
+    flex-direction: column;
+  }
+  #blog .blog-box {
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #blog .blog-img {
+    width: 100%;
+  }
+  #blog .blog-details {
+    padding: 10px;
+    width: 100%;
+  }
+  #about-head {
+    padding: 10px;
+    flex-direction: column;
+  }
+  #about-head img {
+    width: 100%;
+  }
+  #about-head div {
+    padding: 0;
+  }
+  #about-app {
+    padding: 0;
+  }
+  #about-app .video {
+    padding: 20px;
+    margin: 0 auto;
+  }
+  #contact-details {
+    padding: 30px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #contact-details .details {
+    width: 100%;
+  }
+  #contact-details .details li span {
+    padding: 10px 0 10px 10px;
+  }
+  #contact-details .details h2,
+  #form-details form h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  #contact-details .details li p {
+    margin: 0;
+    padding: 5px;
+    font-size: 14px;
+  }
+  #contact-details .map {
+    width: 100%;
+    height: 300px;
+  }
+  #form-details {
+    flex-direction: column;
+    padding: 10px;
+  }
+  #form-details form {
+    width: 100%;
+  }
+  #form-details form textarea {
+    height: 150px;
+  }
+  #form-details form button {
+    margin-bottom: 20px;
+  }
+  #cart {
+    padding: 5px;
+  }
+  #cart-add {
+    padding: 0;
+    flex-direction: column;
+  }
+  #coupon {
+    padding: 30px 10px 10px 10px;
+    width: 100%;
+  }
+  #coupon input {
+    width: 70%;
+  }
+  #subtotal {
+    width: 100%;
   }
 }
