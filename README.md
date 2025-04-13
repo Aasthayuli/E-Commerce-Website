@@ -54,7 +54,7 @@ cd E-Commerce Website
 
 ## 🛒 Shopping Cart
 
-<img src="img/cartPage.png" alt="cartPage Screenshot" width="1000"/>
+<img src="img/cartpage.png" alt="cartPage Screenshot" width="1000"/>
 
 # 🤝 Contributing
 
